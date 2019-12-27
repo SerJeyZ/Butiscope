@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Catalog</title>
+    <meta name="discription" content="Здесь будет описание сайта!">
+    <meta name="theme-color" content="#c9e0e04d">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <body class="page-body">
+    <div class="wrapper">
+      <div class="maincontent">
+        <header class="page-header">
+          <div class="layout-position--header">
+            <div class="container page-header__wrap">
+              <div class="container page-header__left-block">
+                <div class="page-header__burger"><a class="link burger-menu-btn" href="javascript:void(0)">Открыть меню</a>
+                </div>
+                <div class="page-header__logo">
+                  <div class="logo-wrap"><a class="logo-link" href="index.html"><img class="logo-img" src="img/logo.svg" alt="Бьютископ"/></a>
+                  </div>
+                </div>
+                <div class="page-header__location">
+                  <div class="location"><a class="link location__link" href="javascript:void(0)">Город</a>
+                  </div>
+                </div>
+              </div>
+              <div class="container page-header__menu">
+                <div class="menu-service page-header__menu-service">
+                  <ul class="list menu-service">
+                    <li class="menu-service__item"><a class="menu-service__link menu-service__link--hair" href="catalog.html">hair
+                        <div class="social-img">
+                          <svg width="17px" height="20px">
+                            <use xlink:href="img/sprite.svg#hair"></use>
+                          </svg>
+                        </div></a></li>
+                    <li class="menu-service__item"><a class="menu-service__link menu-service__link--cosm" href="catalog.html">cosmetic
+                        <div class="social-img">
+                          <svg width="20px" height="20px">
+                            <use xlink:href="img/sprite.svg#cosmetic"></use>
+                          </svg>
+                        </div></a></li>
+                    <li class="menu-service__item"><a class="menu-service__link menu-service__link--manic" href="catalog.html">manicure
+                        <div class="social-img">
+                          <svg width="12px" height="22px">
+                            <use xlink:href="img/sprite.svg#manicure"></use>
+                          </svg>
+                        </div></a></li>
+                    <li class="menu-service__item"><a class="menu-service__link menu-service__link--massage" href="catalog.html">massage
+                        <div class="social-img">
+                          <svg width="18px" height="20px">
+                            <use xlink:href="img/sprite.svg#massage"></use>
+                          </svg>
+                        </div></a></li>
+                  </ul>
+                </div>
+                <div class="page-header__btn-block"><a class="link link-btn" href="catalog.html">Катталог мастеров</a><a class="link link-btn link-btn--white-style" href="javascript:void(0)">Стать специалистом</a>
+                </div>
+              </div>
+              <div class="container page-header__right-block">
+                <div class="notification page-header__notification">
+                  <ul class="list notification__list">
+                    <li class="notification__item notification__item--active"><a class="link notification__link notification__link--favorite" href="javascript:void(0)">favorite</a>
+                    </li>
+                    <li class="notification__item"><a class="link notification__link notification__link--notif" href="javascript:void(0)">notification</a>
+                    </li>
+                    <li class="notification__item"><a class="link notification__link notification__link--chat" href="javascript:void(0)">chat</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="user-block page-header__user-block">
+                  <button class="btn btn-login-menu">Registration</button>
+                  <div class="user-block__login-links"><a class="link enter-site-link" href="javascript:void(0)">Вход</a><a class="link registration-site-link" href="javascript:void(0)">Регистрация</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="catalog">
+          <div class="catalog__filters">
+            <div class="layout-position--header">
+              <div class="filters">
+                <div class="filter-service catalog__filters-group"><a class="link link-btn filter-service__open-btn link-btn--text-upper" href="javascript:void(0)">Фильтры</a>
+                  <div class="filter-item filter-service__item"><span class="text text text--c-black text--circle-r filter-service__item-text">Криолиполиз</span>
+                    <button class="btn remove-item" type="Удалить">button</button>
+                  </div>
+                  <div class="filter-item filter-service__item"><span class="text text text--c-black text--circle-r filter-service__item-text">Крио</span>
+                    <button class="btn remove-item" type="Удалить">button</button>
+                  </div>
+                  <div class="filter-service__add-btn">
+                    <button class="btn add-item" type="Добавить">button</button>
+                  </div>
+                </div>
+                <div class="catalog__filters-group box-order-1">
+                  <div class="catalog__filters-group-wrapper">
+                    <div class="filter-category">
+                      <div class="filter-category__item filter-item filter-item--pointer"><span class="text text text--c-black text--arrow-down">По цене</span>
+                      </div>
+                      <div class="filter-category__dropdown">
+                        <ul class="dropdown-list">
+                          <li class="dropdown-list__item"><span class="text text text--c-black text--arrow-down">По цене</span>
+                          </li>
+                          <li class="dropdown-list__item"><span class="text text text--c-black text--arrow-up">По цене</span>
+                          </li>
+                          <li class="dropdown-list__item"><span class="text text text--c-black text--arrow-down">По рейтингу</span>
+                          </li>
+                          <li class="dropdown-list__item"><span class="text text text--c-black text--arrow-up">По рейтингу</span>
+                          </li>
+                          <li class="dropdown-list__item"><span class="text text text--c-black text--arrow-down">По категории</span>
+                          </li>
+                          <li class="dropdown-list__item"><span class="text text text--c-black text--arrow-up">По категории</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="filter-on-vision">
+                      <div class="filter-on-vision__item filter-item filter-item--pointer"><span class="text text text--c-black">Отображать по :</span><span class="text text text--c-main text--big">24</span>
+                      </div>
+                      <div class="filter-on-vision__dropdown">
+                        <ul class="dropdown-list">
+                          <li class="dropdown-list__item"><span class="text text text--c-black">8</span>
+                          </li>
+                          <li class="dropdown-list__item"><span class="text text text--c-black">16</span>
+                          </li>
+                          <li class="dropdown-list__item"><span class="text text text--c-black">24</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-item filter-item__online filter-item--pointer">
+                    <sapn class="checkbox checkbox-active"></sapn><span class="text text--c-black">Только онлайн</span>
+                  </div>
+                </div>
+                <div class="catalog__filters-group box-order-2">
+                  <div class="filter-item__link"><a class="link link-btn link-btn--text-upper link-on-map__desktop" href="javascript:void(0)">Смотреть на карте</a><a class="link link-btn link-on-map__mobile" href="javascript:void(0)">
+                      <svg width="20" height="20">
+                        <use xlink:href="img/sprite.svg#on-map"></use>
+                      </svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__items">
+            <div class="layout-position--catalog">
+              <div class="catalog__container">
+                <ul class="catalog-list">
+                  <li class="catalog-list__item">
+                    <article class="salon-card">
+                      <header class="salon-card-header">
+                        <div class="salon-card-header__top-line">
+                          <div class="salon-group">
+                            <div class="salon-group__item">
+                              <div class="salon-logo salon-logo--bg-y">Б</div>
+                              <div class="salon-group__item-content">
+                                <div class="salon-name"><span class="text text--big text--c-main">Брадобрей, <span>салон</span></span>
+                                  <div class="rating">
+                                    <div class="rating__item salon-name__rating">
+                                      <svg width="18" height="18">
+                                        <use xlink:href="img/sprite.svg#star"></use>
+                                      </svg><span class="text text--big rating__count">4.2</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="salon-online"><span class="text text text--c-black text--circle-gl filter-service__item-text">Online</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="salon-adress">
+                          <div class="salon-adress__item">
+                            <svg width="12" height="16">
+                              <use xlink:href="img/sprite.svg#location"></use>
+                            </svg>
+                          </div>
+                          <div class="salon-adress__item"><span class="text text--c-black">ул. Тверская-Ямская, 14к3</span>
+                          </div>
+                          <div class="salon-adress__item"><a class="link link--under link--small link--c-main" href="javascript:void(0)">На карте</a>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="salon-card__service">
+                        <table class="table-service">
+                          <tr>
+                            <th><span class="text text--circle-y text--c-black">Миостимуляция</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">1000руб</span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th><span class="text text--circle-r text--c-black">Шеллак</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">700руб</span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th><span class="text text--circle-b text--c-black">Окрашивание</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">500руб</span>
+                            </th>
+                          </tr>
+                        </table>
+                      </div>
+                      <footer class="salon-footer">
+                        <div class="chat-link salon-footer__chat-link"><a class="link chat-link" href="javascript:void(0)">
+                            <svg width="20" height="20">
+                              <use xlink:href="img/sprite.svg#chat"></use>
+                            </svg></a></div>
+                        <div class="order-link salon-footer__order-link"><a class="link link-btn link-btn--big link-btn--text-upper" href="salon-cards.html">Записаться</a>
+                          <div class="order-link__hint">
+                            <svg width="6" height="10">
+                              <use xlink:href="img/sprite.svg#q"></use>
+                            </svg>
+                            <div class="order-link__hint-text salon-footer__hint-text">
+                              <p>Мастер свяжется с вами, согласует условия и подтвердит запись</p>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </article>
+                  </li>
+                  <li class="catalog-list__item">
+                    <article class="salon-card">
+                      <header class="salon-card-header">
+                        <div class="salon-card-header__top-line">
+                          <div class="salon-group">
+                            <div class="salon-group__item">
+                              <div class="salon-logo salon-logo--bg-g">А</div>
+                              <div class="salon-group__item-content">
+                                <div class="salon-name"><span class="text text--big text--c-main">Аннет, <span>мастер</span></span>
+                                  <div class="rating">
+                                    <div class="rating__item salon-name__rating">
+                                      <svg width="18" height="18">
+                                        <use xlink:href="img/sprite.svg#star"></use>
+                                      </svg><span class="text text--big rating__count">4.6</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="salon-online"><span class="text text text--c-black text--circle-gl filter-service__item-text">Online</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="salon-adress">
+                          <div class="salon-adress__item">
+                            <svg width="12" height="16">
+                              <use xlink:href="img/sprite.svg#location"></use>
+                            </svg>
+                          </div>
+                          <div class="salon-adress__item"><span class="text text--c-black">ул. Мичуринский пр-тб 112</span>
+                          </div>
+                          <div class="salon-adress__item"><a class="link link--under link--small link--c-main" href="javascript:void(0)">На карте</a>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="salon-card__service">
+                        <table class="table-service">
+                          <tr>
+                            <th><span class="text text--circle-y text--c-black">Миостимуляция</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">1200руб</span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th><span class="text text--circle-r text--c-black">Шеллак</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">500руб</span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th><span class="text text--circle-b text--c-black">Окрашивание</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">800руб</span>
+                            </th>
+                          </tr>
+                        </table>
+                      </div>
+                      <footer class="salon-footer">
+                        <div class="chat-link salon-footer__chat-link"><a class="link chat-link" href="javascript:void(0)">
+                            <svg width="20" height="20">
+                              <use xlink:href="img/sprite.svg#chat"></use>
+                            </svg></a></div>
+                        <div class="order-link salon-footer__order-link"><a class="link link-btn link-btn--big link-btn--text-upper" href="salon-cards.html">Записаться</a>
+                          <div class="order-link__hint">
+                            <svg width="6" height="10">
+                              <use xlink:href="img/sprite.svg#q"></use>
+                            </svg>
+                            <div class="order-link__hint-text salon-footer__hint-text">
+                              <p>Мастер свяжется с вами, согласует условия и подтвердит запись</p>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </article>
+                  </li>
+                  <li class="catalog-list__item">
+                    <article class="salon-card">
+                      <header class="salon-card-header">
+                        <div class="salon-card-header__top-line">
+                          <div class="salon-group">
+                            <div class="salon-group__item">
+                              <div class="salon-logo salon-logo--bg-r">А</div>
+                              <div class="salon-group__item-content">
+                                <div class="salon-name"><span class="text text--big text--c-main">Альфа-центавра, <span>салон</span></span>
+                                  <div class="rating">
+                                    <div class="rating__item salon-name__rating">
+                                      <svg width="18" height="18">
+                                        <use xlink:href="img/sprite.svg#star"></use>
+                                      </svg><span class="text text--big rating__count">4.4</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="salon-online"><span class="text text text--c-black text--circle-gl filter-service__item-text">Online</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="salon-adress">
+                          <div class="salon-adress__item">
+                            <svg width="12" height="16">
+                              <use xlink:href="img/sprite.svg#location"></use>
+                            </svg>
+                          </div>
+                          <div class="salon-adress__item"><span class="text text--c-black">ул. Петровка, 38</span>
+                          </div>
+                          <div class="salon-adress__item"><a class="link link--under link--small link--c-main" href="javascript:void(0)">На карте</a>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="salon-card__service">
+                        <table class="table-service">
+                          <tr>
+                            <th><span class="text text--circle-y text--c-black">Миостимуляция</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">1500руб</span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th><span class="text text--circle-r text--c-black">Шеллак</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">400руб</span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th><span class="text text--circle-b text--c-black">Окрашивание</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">550руб</span>
+                            </th>
+                          </tr>
+                        </table>
+                      </div>
+                      <footer class="salon-footer">
+                        <div class="chat-link salon-footer__chat-link"><a class="link chat-link" href="javascript:void(0)">
+                            <svg width="20" height="20">
+                              <use xlink:href="img/sprite.svg#chat"></use>
+                            </svg></a></div>
+                        <div class="order-link salon-footer__order-link"><a class="link link-btn link-btn--big link-btn--text-upper" href="salon-cards.html">Записаться</a>
+                          <div class="order-link__hint">
+                            <svg width="6" height="10">
+                              <use xlink:href="img/sprite.svg#q"></use>
+                            </svg>
+                            <div class="order-link__hint-text salon-footer__hint-text">
+                              <p>Мастер свяжется с вами, согласует условия и подтвердит запись</p>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </article>
+                  </li>
+                  <li class="catalog-list__item">
+                    <article class="salon-card">
+                      <header class="salon-card-header">
+                        <div class="salon-card-header__top-line">
+                          <div class="salon-group">
+                            <div class="salon-group__item">
+                              <div class="salon-logo salon-logo--bg-y">Б</div>
+                              <div class="salon-group__item-content">
+                                <div class="salon-name"><span class="text text--big text--c-main">Брадобрей, <span>салон</span></span>
+                                  <div class="rating">
+                                    <div class="rating__item salon-name__rating">
+                                      <svg width="18" height="18">
+                                        <use xlink:href="img/sprite.svg#star"></use>
+                                      </svg><span class="text text--big rating__count">4.2</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="salon-online"><span class="text text text--c-black text--circle-gl filter-service__item-text">Online</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="salon-adress">
+                          <div class="salon-adress__item">
+                            <svg width="12" height="16">
+                              <use xlink:href="img/sprite.svg#location"></use>
+                            </svg>
+                          </div>
+                          <div class="salon-adress__item"><span class="text text--c-black">ул. Тверская-Ямская, 14к3</span>
+                          </div>
+                          <div class="salon-adress__item"><a class="link link--under link--small link--c-main" href="javascript:void(0)">На карте</a>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="salon-card__service">
+                        <table class="table-service">
+                          <tr>
+                            <th><span class="text text--circle-y text--c-black">Миостимуляция</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">1100руб</span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th><span class="text text--circle-r text--c-black">Шеллак</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">550руб</span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th><span class="text text--circle-b text--c-black">Окрашивание</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">600руб</span>
+                            </th>
+                          </tr>
+                        </table>
+                      </div>
+                      <footer class="salon-footer">
+                        <div class="chat-link salon-footer__chat-link"><a class="link chat-link" href="javascript:void(0)">
+                            <svg width="20" height="20">
+                              <use xlink:href="img/sprite.svg#chat"></use>
+                            </svg></a></div>
+                        <div class="order-link salon-footer__order-link"><a class="link link-btn link-btn--big link-btn--text-upper" href="salon-cards.html">Записаться</a>
+                          <div class="order-link__hint">
+                            <svg width="6" height="10">
+                              <use xlink:href="img/sprite.svg#q"></use>
+                            </svg>
+                            <div class="order-link__hint-text salon-footer__hint-text">
+                              <p>Мастер свяжется с вами, согласует условия и подтвердит запись</p>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </article>
+                  </li>
+                  <li class="catalog-list__item">
+                    <article class="salon-card">
+                      <header class="salon-card-header">
+                        <div class="salon-card-header__top-line">
+                          <div class="salon-group">
+                            <div class="salon-group__item">
+                              <div class="salon-logo salon-logo--bg-g">А</div>
+                              <div class="salon-group__item-content">
+                                <div class="salon-name"><span class="text text--big text--c-main">Аннет, <span>мастер</span></span>
+                                  <div class="rating">
+                                    <div class="rating__item salon-name__rating">
+                                      <svg width="18" height="18">
+                                        <use xlink:href="img/sprite.svg#star"></use>
+                                      </svg><span class="text text--big rating__count">4.6</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="salon-online"><span class="text text text--c-black text--circle-gl filter-service__item-text">Online</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="salon-adress">
+                          <div class="salon-adress__item">
+                            <svg width="12" height="16">
+                              <use xlink:href="img/sprite.svg#location"></use>
+                            </svg>
+                          </div>
+                          <div class="salon-adress__item"><span class="text text--c-black">ул. Мичуринский пр-тб 112</span>
+                          </div>
+                          <div class="salon-adress__item"><a class="link link--under link--small link--c-main" href="javascript:void(0)">На карте</a>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="salon-card__service">
+                        <table class="table-service">
+                          <tr>
+                            <th><span class="text text--circle-y text--c-black">Миостимуляция</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">1200руб</span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th><span class="text text--circle-r text--c-black">Шеллак</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">500руб</span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th><span class="text text--circle-b text--c-black">Окрашивание</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">800руб</span>
+                            </th>
+                          </tr>
+                        </table>
+                      </div>
+                      <footer class="salon-footer">
+                        <div class="chat-link salon-footer__chat-link"><a class="link chat-link" href="javascript:void(0)">
+                            <svg width="20" height="20">
+                              <use xlink:href="img/sprite.svg#chat"></use>
+                            </svg></a></div>
+                        <div class="order-link salon-footer__order-link"><a class="link link-btn link-btn--big link-btn--text-upper" href="salon-cards.html">Записаться</a>
+                          <div class="order-link__hint">
+                            <svg width="6" height="10">
+                              <use xlink:href="img/sprite.svg#q"></use>
+                            </svg>
+                            <div class="order-link__hint-text salon-footer__hint-text">
+                              <p>Мастер свяжется с вами, согласует условия и подтвердит запись</p>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </article>
+                  </li>
+                  <li class="catalog-list__item">
+                    <article class="salon-card">
+                      <header class="salon-card-header">
+                        <div class="salon-card-header__top-line">
+                          <div class="salon-group">
+                            <div class="salon-group__item">
+                              <div class="salon-logo salon-logo--bg-r">А</div>
+                              <div class="salon-group__item-content">
+                                <div class="salon-name"><span class="text text--big text--c-main">Альфа-центавра, <span>салон</span></span>
+                                  <div class="rating">
+                                    <div class="rating__item salon-name__rating">
+                                      <svg width="18" height="18">
+                                        <use xlink:href="img/sprite.svg#star"></use>
+                                      </svg><span class="text text--big rating__count">4.4</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="salon-online"><span class="text text text--c-black text--circle-gl filter-service__item-text">Online</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="salon-adress">
+                          <div class="salon-adress__item">
+                            <svg width="12" height="16">
+                              <use xlink:href="img/sprite.svg#location"></use>
+                            </svg>
+                          </div>
+                          <div class="salon-adress__item"><span class="text text--c-black">ул. Петровка, 38</span>
+                          </div>
+                          <div class="salon-adress__item"><a class="link link--under link--small link--c-main" href="javascript:void(0)">На карте</a>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="salon-card__service">
+                        <table class="table-service">
+                          <tr>
+                            <th><span class="text text--circle-y text--c-black">Миостимуляция</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">1500руб</span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th><span class="text text--circle-r text--c-black">Шеллак</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">400руб</span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th><span class="text text--circle-b text--c-black">Окрашивание</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">550руб</span>
+                            </th>
+                          </tr>
+                        </table>
+                      </div>
+                      <footer class="salon-footer">
+                        <div class="chat-link salon-footer__chat-link"><a class="link chat-link" href="javascript:void(0)">
+                            <svg width="20" height="20">
+                              <use xlink:href="img/sprite.svg#chat"></use>
+                            </svg></a></div>
+                        <div class="order-link salon-footer__order-link"><a class="link link-btn link-btn--big link-btn--text-upper" href="salon-cards.html">Записаться</a>
+                          <div class="order-link__hint">
+                            <svg width="6" height="10">
+                              <use xlink:href="img/sprite.svg#q"></use>
+                            </svg>
+                            <div class="order-link__hint-text salon-footer__hint-text">
+                              <p>Мастер свяжется с вами, согласует условия и подтвердит запись</p>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </article>
+                  </li>
+                  <li class="catalog-list__item">
+                    <article class="salon-card">
+                      <header class="salon-card-header">
+                        <div class="salon-card-header__top-line">
+                          <div class="salon-group">
+                            <div class="salon-group__item">
+                              <div class="salon-logo salon-logo--bg-y">Б</div>
+                              <div class="salon-group__item-content">
+                                <div class="salon-name"><span class="text text--big text--c-main">Брадобрей, <span>салон</span></span>
+                                  <div class="rating">
+                                    <div class="rating__item salon-name__rating">
+                                      <svg width="18" height="18">
+                                        <use xlink:href="img/sprite.svg#star"></use>
+                                      </svg><span class="text text--big rating__count">4.2</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="salon-online"><span class="text text text--c-black text--circle-gl filter-service__item-text">Online</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="salon-adress">
+                          <div class="salon-adress__item">
+                            <svg width="12" height="16">
+                              <use xlink:href="img/sprite.svg#location"></use>
+                            </svg>
+                          </div>
+                          <div class="salon-adress__item"><span class="text text--c-black">ул. Тверская-Ямская, 14к3</span>
+                          </div>
+                          <div class="salon-adress__item"><a class="link link--under link--small link--c-main" href="javascript:void(0)">На карте</a>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="salon-card__service">
+                        <table class="table-service">
+                          <tr>
+                            <th><span class="text text--circle-y text--c-black">Миостимуляция</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">1000руб</span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th><span class="text text--circle-r text--c-black">Шеллак</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">700руб</span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th><span class="text text--circle-b text--c-black">Окрашивание</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">500руб</span>
+                            </th>
+                          </tr>
+                        </table>
+                      </div>
+                      <footer class="salon-footer">
+                        <div class="chat-link salon-footer__chat-link"><a class="link chat-link" href="javascript:void(0)">
+                            <svg width="20" height="20">
+                              <use xlink:href="img/sprite.svg#chat"></use>
+                            </svg></a></div>
+                        <div class="order-link salon-footer__order-link"><a class="link link-btn link-btn--big link-btn--text-upper" href="salon-cards.html">Записаться</a>
+                          <div class="order-link__hint">
+                            <svg width="6" height="10">
+                              <use xlink:href="img/sprite.svg#q"></use>
+                            </svg>
+                            <div class="order-link__hint-text salon-footer__hint-text">
+                              <p>Мастер свяжется с вами, согласует условия и подтвердит запись</p>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </article>
+                  </li>
+                  <li class="catalog-list__item">
+                    <article class="salon-card">
+                      <header class="salon-card-header">
+                        <div class="salon-card-header__top-line">
+                          <div class="salon-group">
+                            <div class="salon-group__item">
+                              <div class="salon-logo salon-logo--bg-g">А</div>
+                              <div class="salon-group__item-content">
+                                <div class="salon-name"><span class="text text--big text--c-main">Аннет, <span>мастер</span></span>
+                                  <div class="rating">
+                                    <div class="rating__item salon-name__rating">
+                                      <svg width="18" height="18">
+                                        <use xlink:href="img/sprite.svg#star"></use>
+                                      </svg><span class="text text--big rating__count">4.6</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="salon-online"><span class="text text text--c-black text--circle-gl filter-service__item-text">Online</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="salon-adress">
+                          <div class="salon-adress__item">
+                            <svg width="12" height="16">
+                              <use xlink:href="img/sprite.svg#location"></use>
+                            </svg>
+                          </div>
+                          <div class="salon-adress__item"><span class="text text--c-black">ул. Мичуринский пр-тб 112</span>
+                          </div>
+                          <div class="salon-adress__item"><a class="link link--under link--small link--c-main" href="javascript:void(0)">На карте</a>
+                          </div>
+                        </div>
+                      </header>
+                      <div class="salon-card__service">
+                        <table class="table-service">
+                          <tr>
+                            <th><span class="text text--circle-y text--c-black">Миостимуляция</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">1200руб</span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th><span class="text text--circle-r text--c-black">Шеллак</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">500руб</span>
+                            </th>
+                          </tr>
+                          <tr>
+                            <th><span class="text text--circle-b text--c-black">Окрашивание</span>
+                            </th>
+                            <th class="th-price"><span class="text text--big-m text--c-black">800руб</span>
+                            </th>
+                          </tr>
+                        </table>
+                      </div>
+                      <footer class="salon-footer">
+                        <div class="chat-link salon-footer__chat-link"><a class="link chat-link" href="javascript:void(0)">
+                            <svg width="20" height="20">
+                              <use xlink:href="img/sprite.svg#chat"></use>
+                            </svg></a></div>
+                        <div class="order-link salon-footer__order-link"><a class="link link-btn link-btn--big link-btn--text-upper" href="salon-cards.html">Записаться</a>
+                          <div class="order-link__hint">
+                            <svg width="6" height="10">
+                              <use xlink:href="img/sprite.svg#q"></use>
+                            </svg>
+                            <div class="order-link__hint-text salon-footer__hint-text">
+                              <p>Мастер свяжется с вами, согласует условия и подтвердит запись</p>
+                            </div>
+                          </div>
+                        </div>
+                      </footer>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+              <div class="catalog__show-btn"><a class="link link-btn catalog__btn link-btn--big link-btn--text-upper" href="javascript:void(0)">Показать ещё</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__bottom-line">
+            <div class="layout-position">
+              <p>Задача организации, в особенности же рамки и место обучения кадров играет важную роль в формировании существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции в значительной степени обуславливает создание дальнейших направлений развития. Значимость этих проблем настолько очевидна, что консультация с широким активом требуют от нас анализа соответствующий условий активизации.</p>
+              <p>Задача организации, в особенности же рамки и место обучения кадров играет важную роль в формировании существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции в значительной степени обуславливает создание дальнейших направлений развития. Значимость этих проблем настолько очевидна, что консультация с широким активом требуют от нас анализа соответствующий условий активизации.</p>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="page-footer">
+        <div class="layout-position">
+          <div class="footer-links">
+            <div class="footer-block-links">
+              <div class="column">
+                <ul class="footer-list">
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Подключиться как салон</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Подключиться как мастер</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Инвесторам</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Франчайзинг</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Пресс-центр</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul class="footer-list">
+                  <li class="footer-list__item"><a class="link footer-list__link" href="catalog.html">Все салоны</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="catalog.html">Все мастера</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Специальные предложения</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Магазин подарков</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Пользовательское соглашение</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-links__social">
+              <ul class="list social-list">
+                <li class="social-list__item"><a class="social-list__link social-list__link--vk" href="javascript:void(0)">Вконтакте
+                    <div class="social-img">
+                      <svg width="24px" height="14px">
+                        <use xlink:href="img/sprite.svg#vk"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--fb" href="javascript:void(0)">facebook
+                    <div class="social-img">
+                      <svg width="12px" height="24px">
+                        <use xlink:href="img/sprite.svg#fb"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--ok" href="javascript:void(0)">Однокласники
+                    <div class="social-img">
+                      <svg width="14px" height="24px">
+                        <use xlink:href="img/sprite.svg#odkl"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--inst" href="javascript:void(0)">instagram
+                    <div class="social-img">
+                      <svg width="24px" height="24px">
+                        <use xlink:href="img/sprite.svg#inst"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--ytube" href="javascript:void(0)">youtube
+                    <div class="social-img">
+                      <svg width="24px" height="18px">
+                        <use xlink:href="img/sprite.svg#youtb"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--tg" href="javascript:void(0)">Telegram
+                    <div class="social-img">
+                      <svg width="24px" height="20px">
+                        <use xlink:href="img/sprite.svg#tg"></use>
+                      </svg>
+                    </div></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Главная</title>
+    <meta name="discription" content="Здесь будет описание сайта!">
+    <meta name="theme-color" content="#c9e0e04d">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <body class="page-body">
+    <div class="wrapper">
+      <div class="maincontent">
+        <header class="page-header">
+          <div class="layout-position--header">
+            <div class="container page-header__wrap">
+              <div class="container page-header__left-block">
+                <div class="page-header__burger"><a class="link burger-menu-btn" href="javascript:void(0)">Открыть меню</a>
+                </div>
+                <div class="page-header__logo">
+                  <div class="logo-wrap"><a><img class="logo-img" src="img/logo.svg" alt="Бьютископ"/></a>
+                  </div>
+                </div>
+                <div class="page-header__location">
+                  <div class="location"><a class="link location__link" href="javascript:void(0)">Город</a>
+                  </div>
+                </div>
+              </div>
+              <div class="container page-header__menu">
+                <div class="menu-service page-header__menu-service">
+                  <ul class="list menu-service">
+                    <li class="menu-service__item"><a class="menu-service__link menu-service__link--hair" href="catalog.html">hair
+                        <div class="social-img">
+                          <svg width="17px" height="20px">
+                            <use xlink:href="img/sprite.svg#hair"></use>
+                          </svg>
+                        </div></a></li>
+                    <li class="menu-service__item"><a class="menu-service__link menu-service__link--cosm" href="catalog.html">cosmetic
+                        <div class="social-img">
+                          <svg width="20px" height="20px">
+                            <use xlink:href="img/sprite.svg#cosmetic"></use>
+                          </svg>
+                        </div></a></li>
+                    <li class="menu-service__item"><a class="menu-service__link menu-service__link--manic" href="catalog.html">manicure
+                        <div class="social-img">
+                          <svg width="12px" height="22px">
+                            <use xlink:href="img/sprite.svg#manicure"></use>
+                          </svg>
+                        </div></a></li>
+                    <li class="menu-service__item"><a class="menu-service__link menu-service__link--massage" href="catalog.html">massage
+                        <div class="social-img">
+                          <svg width="18px" height="20px">
+                            <use xlink:href="img/sprite.svg#massage"></use>
+                          </svg>
+                        </div></a></li>
+                  </ul>
+                </div>
+                <div class="page-header__btn-block"><a class="link link-btn" href="catalog.html">Катталог мастеров</a><a class="link link-btn link-btn--white-style" href="javascript:void(0)">Стать специалистом</a>
+                </div>
+              </div>
+              <div class="container page-header__right-block">
+                <div class="notification page-header__notification">
+                  <ul class="list notification__list">
+                    <li class="notification__item notification__item--active"><a class="link notification__link notification__link--favorite" href="javascript:void(0)">favorite</a>
+                    </li>
+                    <li class="notification__item"><a class="link notification__link notification__link--notif" href="javascript:void(0)">notification</a>
+                    </li>
+                    <li class="notification__item"><a class="link notification__link notification__link--chat" href="javascript:void(0)">chat</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="user-block page-header__user-block">
+                  <button class="btn btn-login-menu">Registration</button>
+                  <div class="user-block__login-links"><a class="link enter-site-link" href="javascript:void(0)">Вход</a><a class="link registration-site-link" href="javascript:void(0)">Регистрация</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="index-main">
+          <section class="hero">
+            <div class="layout-position">
+              <div class="hero__inner">
+                <div class="hero__content">
+                  <h1 class="hero__title">Aгрегатор салонов красоты и частных мастеров</h1><span class="hero__promo">Все специалисты на одном сайте</span>
+                </div>
+                <div class="advantages hero__advantages">
+                  <ul class="advantages__list">
+                    <li class="advantages__list-item">
+                      <div class="card">
+                        <div class="card__img advantages__card-img"><img src="img/sprite.svg#m-search" alt=""/>
+                        </div>
+                        <div class="card__text advantages__card-text">
+                          <p class="card__text-item">Удобный поиск мастера в сфере красоты</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="advantages__list-item">
+                      <div class="card">
+                        <div class="card__img advantages__card-img"><img src="img/sprite.svg#base" alt=""/>
+                        </div>
+                        <div class="card__text advantages__card-text">
+                          <p class="card__text-item">Самая большая база мастеров в салонах и на дому</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="advantages__list-item">
+                      <div class="card">
+                        <div class="card__img advantages__card-img"><img src="img/sprite.svg#rate" alt=""/>
+                        </div>
+                        <div class="card__text advantages__card-text">
+                          <p class="card__text-item">Реальный рейтинг мастеров и салонов</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="advantages__list-item">
+                      <div class="card">
+                        <div class="card__img advantages__card-img"><img src="img/sprite.svg#gift" alt=""/>
+                        </div>
+                        <div class="card__text advantages__card-text">
+                          <p class="card__text-item">Бонусы, подарки и акции для любимых клиентов</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="service">
+            <div class="layout-position">
+              <h2 class="title service__title">У нас есть всё что вам нужно!</h2>
+              <div class="service__gallery">
+                <div class="slider__service owl-carousel" id="service-slider">
+                  <div class="slider__service-item">
+                    <div class="slider__service-img"><img src="img/man-hair-desktop.jpg" alt="Стрижка"/>
+                    </div>
+                    <div class="slider__service-text"><span class="slide-discr">Мужская стрижка</span></div>
+                  </div>
+                  <div class="slider__service-item">
+                    <div class="slider__service-img"><img src="img/w-hair-desktop.jpg" alt="Стрижка"/>
+                    </div>
+                    <div class="slider__service-text"><span class="slide-discr">Женская стрижка</span></div>
+                  </div>
+                  <div class="slider__service-item">
+                    <div class="slider__service-img"><img src="img/eyebrows-desktop.jpg" alt="Коррекция бровей"/>
+                    </div>
+                    <div class="slider__service-text"><span class="slide-discr">Коррекция бровей</span></div>
+                  </div>
+                  <div class="slider__service-item">
+                    <div class="slider__service-img"><img src="img/man-hair-desktop.jpg" alt="Стрижка"/>
+                    </div>
+                    <div class="slider__service-text"><span class="slide-discr">Мужская стрижка</span></div>
+                  </div>
+                  <div class="slider__service-item">
+                    <div class="slider__service-img"><img src="img/w-hair-desktop.jpg" alt="Стрижка"/>
+                    </div>
+                    <div class="slider__service-text"><span class="slide-discr">Женская стрижка</span></div>
+                  </div>
+                </div>
+                <div class="slider-controls">
+                  <button class="btn btn-slider slider__btn-prev" id="service-btn-prev" type="button">
+                    <svg width="10px" height="20px">
+                      <use xlink:href="img/sprite.svg#arrow-prw"></use>
+                    </svg>
+                  </button>
+                  <button class="btn btn-slider slider__btn-next" id="service-btn-next" type="button">
+                    <svg width="10px" height="20px">
+                      <use xlink:href="img/sprite.svg#arrow-nxt"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="service__block-links">
+                <div class="block-links">
+                  <div class="block-links__item block-links__item--hair block-links__item--big"><a class="block-links__link" href="catalog.html"><span class="block-links__text">Парикмакерские услуги</span></a></div>
+                  <div class="block-links__item block-links__item--cosm block-links__item--big"><a class="block-links__link" href="catalog.html"><span class="block-links__text">Косметология</span></a></div>
+                  <div class="block-links__item block-links__item--manic"><a class="block-links__link" href="catalog.html"><span class="block-links__text">Ногтевой сервис</span></a></div>
+                  <div class="block-links__item block-links__item--mas"><a class="block-links__link" href="catalog.html"><span class="block-links__text">Массаж </span></a></div>
+                  <div class="block-links__item block-links__item--hair2"><a class="block-links__link" href="catalog.html"><span class="block-links__text">Парикмакерские услуги</span></a></div>
+                </div>
+                <div class="block-links__slider owl-carousel" id="service-link-slider">
+                  <div class="block-links__slider-item">
+                    <div class="block-links__item block-links__item--hair"><a class="block-links__link" href="javascript:void(0)"><span class="block-links__text">Парикмакерские услуги</span></a></div>
+                  </div>
+                  <div class="block-links__slider-item">
+                    <div class="block-links__item block-links__item--cosm"><a class="block-links__link" href="javascript:void(0)"><span class="block-links__text">Косметология</span></a></div>
+                  </div>
+                  <div class="block-links__slider-item">
+                    <div class="block-links__item block-links__item--manic"><a class="block-links__link" href="javascript:void(0)"><span class="block-links__text">Ногтевой сервис</span></a></div>
+                  </div>
+                  <div class="block-links__slider-item">
+                    <div class="block-links__item block-links__item--mas"><a class="block-links__link" href="javascript:void(0)"><span class="block-links__text">Массаж </span></a></div>
+                  </div>
+                  <div class="block-links__slider-item">
+                    <div class="block-links__item block-links__item--hair2"><a class="block-links__link" href="javascript:void(0)"><span class="block-links__text">Парикмакерские услуги</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="promo">
+            <div class="layout-position">
+              <h2 class="title promo__title">Специальные предложения</h2>
+              <div class="promo__slider owl-carousel" id="promo">
+                <div class="promo-card">
+                  <header class="promo-card__header">
+                    <div class="promo-card__master"><span class="text text--big text--c-main">Брадобрей, <span>салон</span></span>
+                    </div>
+                    <div class="promo-card__date">
+                      <time datetime="2019-12-31"><span class="text text--small">Действует до 31.12.2019</span>
+                      </time>
+                    </div>
+                  </header>
+                  <div class="promo-card__body">
+                    <div class="promo-card__serv">
+                      <ul class="promo-card__list">
+                        <li class="promo-card__list-item"><span class="text">Парикмахерские услуги</span>
+                        </li>
+                        <li class="promo-card__list-item"><span class="text">Стрижка бороды</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="promo-card__slogan">
+                      <p class="discr">Приведи друга и оба получите скидку 10% на стрижку бороды</p>
+                    </div>
+                    <div class="promo-card__btn"><a class="link promo-card__link" href="salon-cards.html"><span class="text promo-card__link-text">Стоимость: </span><span class="text text--big text--c-main">300</span></a></div>
+                  </div>
+                </div>
+                <div class="promo-card">
+                  <header class="promo-card__header">
+                    <div class="promo-card__master"><span class="text text--big text--c-main">Аннет, <span>мастер</span></span>
+                    </div>
+                    <div class="promo-card__date">
+                      <time datetime="2019-12-31"><span class="text text--small">Действует до 31.12.2019</span>
+                      </time>
+                    </div>
+                  </header>
+                  <div class="promo-card__body">
+                    <div class="promo-card__serv">
+                      <ul class="promo-card__list">
+                        <li class="promo-card__list-item"><span class="text">Ногтевой сервис</span>
+                        </li>
+                        <li class="promo-card__list-item"><span class="text">Маникюр</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="promo-card__slogan">
+                      <p class="discr">Маникюр и педикюр за 1200 руб</p>
+                    </div>
+                    <div class="promo-card__btn"><a class="link promo-card__link" href="salon-cards.html"><span class="text promo-card__link-text">Стоимость: </span><span class="text text--big text--c-main">400</span></a></div>
+                  </div>
+                </div>
+                <div class="promo-card">
+                  <header class="promo-card__header">
+                    <div class="promo-card__master"><span class="text text--big text--c-main">Кармэн, <span>салон</span></span>
+                    </div>
+                    <div class="promo-card__date">
+                      <time datetime="2019-12-31"><span class="text text--small">Действует до 31.12.2019</span>
+                      </time>
+                    </div>
+                  </header>
+                  <div class="promo-card__body">
+                    <div class="promo-card__serv">
+                      <ul class="promo-card__list">
+                        <li class="promo-card__list-item"><span class="text">Ногтевой сервис</span>
+                        </li>
+                        <li class="promo-card__list-item"><span class="text">Окрашивание волос</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="promo-card__slogan">
+                      <p class="discr">При заказе услуги краска премиум-качества в подарок</p>
+                    </div>
+                    <div class="promo-card__btn"><a class="link promo-card__link" href="salon-cards.html"><span class="text promo-card__link-text">Стоимость: </span><span class="text text--big text--c-main">500</span></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-controls">
+                <button class="btn btn-slider slider__btn-prev" id="promo-btn-prev" type="button">
+                  <svg width="10px" height="20px">
+                    <use xlink:href="img/sprite.svg#arrow-prw"></use>
+                  </svg>
+                </button>
+                <button class="btn btn-slider slider__btn-next" id="promo-btn-next" type="button">
+                  <svg width="10px" height="20px">
+                    <use xlink:href="img/sprite.svg#arrow-nxt"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <section class="index-comments">
+            <div class="layout-position">
+              <h2 class="title comments__title">Впечатления наших гостей</h2>
+              <div class="comments__slider owl-carousel" id="comment-slider">
+                <div class="comment">
+                  <header class="comment__header index__comment">
+                    <div class="comment__author"><span class="text text--big text--c-main">Инна Петровна</span>
+                    </div>
+                    <div class="comment__date">
+                      <time datetime="2019-12-31"><span class="text text--small">31.12.2019</span>
+                      </time>
+                    </div>
+                  </header>
+                  <div class="comment__body">
+                    <div class="comment__body-row">
+                      <div class="comment__master-name"><span class="text text--big text--c-main">Брадобрей, <span>салон</span></span>
+                      </div>
+                      <div class="rating">
+                        <div class="rating__item"> <span class="text">Оценка автора:</span><span class="text text--c-black text--big rating__count">4</span>
+                        </div>
+                        <div class="rating__item"><span class="text">Рейтинг салона:</span><span class="text text--c-black text--big rating__count">5</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment__content">
+                      <p class="discr comment__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment">
+                  <header class="comment__header index__comment">
+                    <div class="comment__author"><span class="text text--big text--c-main">Ольга Сидорова</span>
+                    </div>
+                    <div class="comment__date">
+                      <time datetime="2019-12-31"><span class="text text--small">31.12.2019</span>
+                      </time>
+                    </div>
+                  </header>
+                  <div class="comment__body">
+                    <div class="comment__body-row">
+                      <div class="comment__master-name"><span class="text text--big text--c-main">Аннет, <span>мастер</span></span>
+                      </div>
+                      <div class="rating">
+                        <div class="rating__item"> <span class="text">Оценка автора:</span><span class="text text--c-black text--big rating__count">5</span>
+                        </div>
+                        <div class="rating__item"><span class="text">Рейтинг салона:</span><span class="text text--c-black text--big rating__count">5</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment__content">
+                      <p class="discr comment__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment">
+                  <header class="comment__header index__comment">
+                    <div class="comment__author"><span class="text text--big text--c-main">Инна Петровна</span>
+                    </div>
+                    <div class="comment__date">
+                      <time datetime="2019-12-31"><span class="text text--small">31.12.2019</span>
+                      </time>
+                    </div>
+                  </header>
+                  <div class="comment__body">
+                    <div class="comment__body-row">
+                      <div class="comment__master-name"><span class="text text--big text--c-main">Брадобрей, <span>салон</span></span>
+                      </div>
+                      <div class="rating">
+                        <div class="rating__item"> <span class="text">Оценка автора:</span><span class="text text--c-black text--big rating__count">4</span>
+                        </div>
+                        <div class="rating__item"><span class="text">Рейтинг салона:</span><span class="text text--c-black text--big rating__count">5</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment__content">
+                      <p class="discr comment__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment">
+                  <header class="comment__header index__comment">
+                    <div class="comment__author"><span class="text text--big text--c-main">Ольга Сидорова</span>
+                    </div>
+                    <div class="comment__date">
+                      <time datetime="2019-12-31"><span class="text text--small">31.12.2019</span>
+                      </time>
+                    </div>
+                  </header>
+                  <div class="comment__body">
+                    <div class="comment__body-row">
+                      <div class="comment__master-name"><span class="text text--big text--c-main">Аннет, <span>мастер</span></span>
+                      </div>
+                      <div class="rating">
+                        <div class="rating__item"> <span class="text">Оценка автора:</span><span class="text text--c-black text--big rating__count">5</span>
+                        </div>
+                        <div class="rating__item"><span class="text">Рейтинг салона:</span><span class="text text--c-black text--big rating__count">5</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment__content">
+                      <p class="discr comment__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment">
+                  <header class="comment__header index__comment">
+                    <div class="comment__author"><span class="text text--big text--c-main">Инна Петровна</span>
+                    </div>
+                    <div class="comment__date">
+                      <time datetime="2019-12-31"><span class="text text--small">31.12.2019</span>
+                      </time>
+                    </div>
+                  </header>
+                  <div class="comment__body">
+                    <div class="comment__body-row">
+                      <div class="comment__master-name"><span class="text text--big text--c-main">Брадобрей, <span>салон</span></span>
+                      </div>
+                      <div class="rating">
+                        <div class="rating__item"> <span class="text">Оценка автора:</span><span class="text text--c-black text--big rating__count">4</span>
+                        </div>
+                        <div class="rating__item"><span class="text">Рейтинг салона:</span><span class="text text--c-black text--big rating__count">5</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment__content">
+                      <p class="discr comment__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-controls">
+              <button class="btn btn-slider slider__btn-prev" id="comment-btn-prev" type="button">
+                <svg width="10px" height="20px">
+                  <use xlink:href="img/sprite.svg#arrow-prw"></use>
+                </svg>
+              </button>
+              <button class="btn btn-slider slider__btn-next" id="comment-btn-next" type="button">
+                <svg width="10px" height="20px">
+                  <use xlink:href="img/sprite.svg#arrow-nxt"></use>
+                </svg>
+              </button>
+            </div>
+          </section>
+          <section class="articles">
+            <div class="layout-position">
+              <div class="articles__top-line">
+                <ul class="articles__list">
+                  <li class="articles__list-item"><a class="link articles__list-link" href="news.html">
+                      <article class="article">
+                        <div class="article__title">
+                          <div class="article__title-img">
+                            <svg width="48px" height="48px">
+                              <use xlink:href="img/sprite.svg#novelty"></use>
+                            </svg>
+                          </div>
+                          <div class="article__title-text">
+                            <h3 class="subtitle">Новинки</h3>
+                          </div>
+                        </div>
+                        <div class="article__text">
+                          <p class="article__text-par">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев.</p>
+                        </div>
+                      </article></a></li>
+                  <li class="articles__list-item"><a class="link articles__list-link" href="news.html">
+                      <article class="article">
+                        <div class="article__title">
+                          <div class="article__title-img">
+                            <svg width="48px" height="48px">
+                              <use xlink:href="img/sprite.svg#news"></use>
+                            </svg>
+                          </div>
+                          <div class="article__title-text">
+                            <h3 class="subtitle">Новости</h3>
+                          </div>
+                        </div>
+                        <div class="article__text">
+                          <p class="article__text-par">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев.</p>
+                        </div>
+                      </article></a></li>
+                  <li class="articles__list-item"><a class="link articles__list-link" href="news.html">
+                      <article class="article">
+                        <div class="article__title">
+                          <div class="article__title-img">
+                            <svg width="48px" height="48px">
+                              <use xlink:href="img/sprite.svg#articles"></use>
+                            </svg>
+                          </div>
+                          <div class="article__title-text">
+                            <h3 class="subtitle">Статьи</h3>
+                          </div>
+                        </div>
+                        <div class="article__text">
+                          <p class="article__text-par">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев.</p>
+                        </div>
+                      </article></a></li>
+                </ul>
+              </div>
+              <div class="articles__bottom-line">
+                <p>Задача организации, в особенности же рамки и место обучения кадров играет важную роль в формировании существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции в значительной степени обуславливает создание дальнейших направлений развития. Значимость этих проблем настолько очевидна, что консультация с широким активом требуют от нас анализа соответствующий условий активизации.</p>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer class="page-footer">
+        <div class="layout-position">
+          <div class="footer-links">
+            <div class="footer-block-links">
+              <div class="column">
+                <ul class="footer-list">
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Подключиться как салон</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Подключиться как мастер</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Инвесторам</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Франчайзинг</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Пресс-центр</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul class="footer-list">
+                  <li class="footer-list__item"><a class="link footer-list__link" href="catalog.html">Все салоны</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="catalog.html">Все мастера</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Специальные предложения</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Магазин подарков</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Пользовательское соглашение</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-links__social">
+              <ul class="list social-list">
+                <li class="social-list__item"><a class="social-list__link social-list__link--vk" href="javascript:void(0)">Вконтакте
+                    <div class="social-img">
+                      <svg width="24px" height="14px">
+                        <use xlink:href="img/sprite.svg#vk"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--fb" href="javascript:void(0)">facebook
+                    <div class="social-img">
+                      <svg width="12px" height="24px">
+                        <use xlink:href="img/sprite.svg#fb"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--ok" href="javascript:void(0)">Однокласники
+                    <div class="social-img">
+                      <svg width="14px" height="24px">
+                        <use xlink:href="img/sprite.svg#odkl"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--inst" href="javascript:void(0)">instagram
+                    <div class="social-img">
+                      <svg width="24px" height="24px">
+                        <use xlink:href="img/sprite.svg#inst"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--ytube" href="javascript:void(0)">youtube
+                    <div class="social-img">
+                      <svg width="24px" height="18px">
+                        <use xlink:href="img/sprite.svg#youtb"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--tg" href="javascript:void(0)">Telegram
+                    <div class="social-img">
+                      <svg width="24px" height="20px">
+                        <use xlink:href="img/sprite.svg#tg"></use>
+                      </svg>
+                    </div></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

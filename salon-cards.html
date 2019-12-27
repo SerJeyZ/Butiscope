@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Карточка салона</title>
+    <meta name="discription" content="Здесь будет описание сайта!">
+    <meta name="theme-color" content="#c9e0e04d">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <body class="page-body">
+    <div class="wrapper">
+      <div class="maincontent">
+        <header class="page-header">
+          <div class="layout-position--header">
+            <div class="container page-header__wrap">
+              <div class="container page-header__left-block">
+                <div class="page-header__burger"><a class="link burger-menu-btn" href="javascript:void(0)">Открыть меню</a>
+                </div>
+                <div class="page-header__logo">
+                  <div class="logo-wrap"><a class="logo-link" href="index.html"><img class="logo-img" src="img/logo.svg" alt="Бьютископ"/></a>
+                  </div>
+                </div>
+                <div class="page-header__location">
+                  <div class="location"><a class="link location__link" href="javascript:void(0)">Город</a>
+                  </div>
+                </div>
+              </div>
+              <div class="container page-header__menu">
+                <div class="menu-service page-header__menu-service">
+                  <ul class="list menu-service">
+                    <li class="menu-service__item"><a class="menu-service__link menu-service__link--hair" href="catalog.html">hair
+                        <div class="social-img">
+                          <svg width="17px" height="20px">
+                            <use xlink:href="img/sprite.svg#hair"></use>
+                          </svg>
+                        </div></a></li>
+                    <li class="menu-service__item"><a class="menu-service__link menu-service__link--cosm" href="catalog.html">cosmetic
+                        <div class="social-img">
+                          <svg width="20px" height="20px">
+                            <use xlink:href="img/sprite.svg#cosmetic"></use>
+                          </svg>
+                        </div></a></li>
+                    <li class="menu-service__item"><a class="menu-service__link menu-service__link--manic" href="catalog.html">manicure
+                        <div class="social-img">
+                          <svg width="12px" height="22px">
+                            <use xlink:href="img/sprite.svg#manicure"></use>
+                          </svg>
+                        </div></a></li>
+                    <li class="menu-service__item"><a class="menu-service__link menu-service__link--massage" href="catalog.html">massage
+                        <div class="social-img">
+                          <svg width="18px" height="20px">
+                            <use xlink:href="img/sprite.svg#massage"></use>
+                          </svg>
+                        </div></a></li>
+                  </ul>
+                </div>
+                <div class="page-header__btn-block"><a class="link link-btn" href="catalog.html">Катталог мастеров</a><a class="link link-btn link-btn--white-style" href="javascript:void(0)">Стать специалистом</a>
+                </div>
+              </div>
+              <div class="container page-header__right-block">
+                <div class="notification page-header__notification">
+                  <ul class="list notification__list">
+                    <li class="notification__item notification__item--active"><a class="link notification__link notification__link--favorite" href="javascript:void(0)">favorite</a>
+                    </li>
+                    <li class="notification__item"><a class="link notification__link notification__link--notif" href="javascript:void(0)">notification</a>
+                    </li>
+                    <li class="notification__item"><a class="link notification__link notification__link--chat" href="javascript:void(0)">chat</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="user-block page-header__user-block">
+                  <button class="btn btn-login-menu">Registration</button>
+                  <div class="user-block__login-links"><a class="link enter-site-link" href="javascript:void(0)">Вход</a><a class="link registration-site-link" href="javascript:void(0)">Регистрация</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="salon-item">
+          <div class="layout-position">
+            <header class="salon-header salon-item__header">
+              <div class="salon-header__left-block">
+                <div class="salon-header__left-block-wrap">
+                  <div class="salon-logo salon-logo--bg-g salon-logo--big">М</div>
+                  <div class="salon-header__left-block-content">
+                    <div class="salon-name"><span class="text text--big text--c-black salon-item__name">Марина Ивановна, <span>27</span></span>
+                    </div>
+                    <div class="salon-online"><span class="text text text--c-black text--circle-gl filter-service__item-text">Online</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rating salon-header__rating">
+                  <div class="rating__item salon-header__rating-item">
+                    <svg width="18" height="18">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg><span class="text text--big-m text--c-black rating__count">4.2</span>
+                  </div>
+                  <div class="rating__item salon-header__rating-item"><span class="text text--big-m text--c-main">Отзывы :</span><span class="text text--c-black rating__count">6</span>
+                  </div>
+                  <div class="rating__item salon-header__rating-item"><span class="text text--big-m text--c-main">Выполнено :</span><span class="text text--c-black rating__count">8</span>
+                  </div>
+                </div>
+              </div>
+              <div class="salon-header__right-block">
+                <div class="salon-header__order">
+                  <div class="chat-link salon-header__order-chat"><a class="link chat-link" href="javascript:void(0)">
+                      <svg width="20" height="20">
+                        <use xlink:href="img/sprite.svg#chat"></use>
+                      </svg></a></div>
+                  <div class="order-link salon-header__order-link"><a class="link link-btn link-btn--big link-btn--text-upper" href="javascript:void(0)">Записаться</a>
+                    <div class="order-link__hint">
+                      <svg width="6" height="10">
+                        <use xlink:href="img/sprite.svg#q"></use>
+                      </svg>
+                      <div class="order-link__hint-text salon-footer__hint-text">
+                        <p>Мастер свяжется с вами, согласует условия и подтвердит запись</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="salon-header__block-links"><a class="link link--under link--small link--c-main link__bmarks" href="javascript:void(0)">В избранное</a><a class="link link--under link--small link--c-main link__dislike" href="javascript:void(0)">Пожаловаться</a><a class="link link--under link--small link--c-main link__share" href="javascript:void(0)">Поделиться</a>
+                </div>
+              </div>
+              <div class="salon-header__service-info">
+                <div class="salon-adress">
+                  <div class="salon-adress__item">
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#location"></use>
+                    </svg>
+                  </div>
+                  <div class="salon-adress__item"><span class="text text--c-black">ул. Тверская-Ямская, 14к3</span>
+                  </div>
+                </div>
+                <div class="salon-bottom-line">
+                  <div class="salon-bottom-line__item">
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#icon-pay"></use>
+                    </svg><span class="text text--c-black text--ml">Оплата:</span><span class="text text--big text--c-main text--ml">наличными, картой, с карты на карту</span>
+                  </div>
+                  <div class="salon-bottom-line__item">
+                    <svg width="16" height="16">
+                      <use xlink:href="img/sprite.svg#icon-place"></use>
+                    </svg><span class="text text--c-black text--ml">Место работы:</span><span class="text text--big text--c-main text--ml">салон, выезд</span>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div class="salon-item__about-us"><strong class="salon-item__about-us-title">О себе</strong>
+              <p class="discr">Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы содержимым. Это тестовый конт ент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.</p>
+            </div>
+            <div class="salon-item__gallery">
+              <div class="salon-item__gallery-wrap owl-carousel" id="salon-item-slider"><img src="img/salon-item1.jpg" alt="img1"/><img src="img/salon-item2.jpg" alt="img2"/><img src="img/salon-item3.jpg" alt="img3"/><img src="img/salon-item1.jpg" alt="img1"/><img src="img/salon-item2.jpg" alt="img2"/><img src="img/salon-item3.jpg" alt="img3"/><img src="img/salon-item1.jpg" alt="img1"/><img src="img/salon-item2.jpg" alt="img2"/><img src="img/salon-item3.jpg" alt="img3"/>
+              </div>
+              <div class="salon-item__slider-control--prev" id="salon-item-prev">
+                <button class="btn btn-slider btn-slider--w slider__btn-prev" id="service-btn-prev" type="button">
+                  <svg width="10px" height="20px">
+                    <use xlink:href="img/sprite.svg#arrow-prw"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="salon-item__slider-control--next" id="salon-item-next">
+                <button class="btn btn-slider btn-slider--w slider__btn-next" id="service-btn-next" type="button">
+                  <svg width="10px" height="20px">
+                    <use xlink:href="img/sprite.svg#arrow-nxt"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="salon-item__container">
+              <div class="salon-item__left-block">
+                <div class="salon-item__service-accordion">
+                  <h2 class="title salon-item__block-title title--small title--text-left title--tt-n">Услуги</h2>
+                  <div class="accordion" id="salon-item__accordion">
+                    <div class="accordion__item">
+                      <h3 class="subtitle accordion__item-title accordion__item-title--blue salon-item__accordion-title">Парикмахерские услуги</h3>
+                    </div>
+                    <div class="accordion__content">
+                      <div class="service-table">
+                        <div class="service-table__left-col">
+                          <ul class="list service-table__list">
+                            <li class="service-table__tab"><span class="service-table__tab-text service-table__tab-text--active">Аппаратная</span>
+                              <ul class="service-table__list price-cosm-app-mobile">
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox service-table__checkbox--active"></span>Миостимуляция</div><span class="service-table__price">800 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Лимфодренаж</div><span class="service-table__price">1200 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Микротоки</div><span class="service-table__price">1000 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Дарсенвализация</div><span class="service-table__price">400 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Ультразвуковая</div><span class="service-table__price">1500 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Криолиполиз</div><span class="service-table__price">500 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox service-table__checkbox--active"></span>Эндосфера</div><span class="service-table__price">2200 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Вакуум</div><span class="service-table__price">800 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Лазерная шлифовка лица</div><span class="service-table__price">1000 руб</span>
+                                </li>
+                              </ul>
+                              <li class="service-table__list-item">Инъекционная</li>
+                              <li class="service-table__list-item">Контурная пластика</li>
+                              <li class="service-table__list-item">Уход за кожей лица</li>
+                              <li class="service-table__list-item">Визаж</li>
+                              <li class="service-table__list-item">Татуаж</li>
+                              <li class="service-table__list-item">Ресницы и брови</li>
+                              <li class="service-table__list-item">Эпиляция</li>
+                              <li class="service-table__list-item">Пирсинг</li>
+                              <li class="service-table__list-item">Солярий, хамам</li>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="service-table__right-col">
+                          <ul class="service-table__list price-cosm-app">
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox service-table__checkbox--active"></span>Миостимуляция</div><span class="service-table__price">800 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Лимфодренаж</div><span class="service-table__price">1200 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Микротоки</div><span class="service-table__price">1000 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Дарсенвализация</div><span class="service-table__price">400 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Ультразвуковая</div><span class="service-table__price">1500 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Криолиполиз</div><span class="service-table__price">500 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox service-table__checkbox--active"></span>Эндосфера</div><span class="service-table__price">2200 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Вакуум</div><span class="service-table__price">800 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Лазерная шлифовка лица</div><span class="service-table__price">1000 руб</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion__item">
+                      <h3 class="subtitle accordion__item-title accordion__item-title--red salon-item__accordion-title">Косметология</h3>
+                    </div>
+                    <div class="accordion__content">
+                      <div class="service-table">
+                        <div class="service-table__left-col">
+                          <ul class="list service-table__list">
+                            <li class="service-table__tab"><span class="service-table__tab-text service-table__tab-text--active">Аппаратная</span>
+                              <ul class="service-table__list price-cosm-app-mobile">
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox service-table__checkbox--active"></span>Миостимуляция</div><span class="service-table__price">800 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Лимфодренаж</div><span class="service-table__price">1200 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Микротоки</div><span class="service-table__price">1000 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Дарсенвализация</div><span class="service-table__price">400 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Ультразвуковая</div><span class="service-table__price">1500 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Криолиполиз</div><span class="service-table__price">500 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox service-table__checkbox--active"></span>Эндосфера</div><span class="service-table__price">2200 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Вакуум</div><span class="service-table__price">800 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Лазерная шлифовка лица</div><span class="service-table__price">1000 руб</span>
+                                </li>
+                              </ul>
+                              <li class="service-table__list-item">Инъекционная</li>
+                              <li class="service-table__list-item">Контурная пластика</li>
+                              <li class="service-table__list-item">Уход за кожей лица</li>
+                              <li class="service-table__list-item">Визаж</li>
+                              <li class="service-table__list-item">Татуаж</li>
+                              <li class="service-table__list-item">Ресницы и брови</li>
+                              <li class="service-table__list-item">Эпиляция</li>
+                              <li class="service-table__list-item">Пирсинг</li>
+                              <li class="service-table__list-item">Солярий, хамам</li>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="service-table__right-col">
+                          <ul class="service-table__list price-cosm-app">
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox service-table__checkbox--active"></span>Миостимуляция</div><span class="service-table__price">800 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Лимфодренаж</div><span class="service-table__price">1200 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Микротоки</div><span class="service-table__price">1000 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Дарсенвализация</div><span class="service-table__price">400 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Ультразвуковая</div><span class="service-table__price">1500 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Криолиполиз</div><span class="service-table__price">500 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox service-table__checkbox--active"></span>Эндосфера</div><span class="service-table__price">2200 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Вакуум</div><span class="service-table__price">800 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Лазерная шлифовка лица</div><span class="service-table__price">1000 руб</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion__item">
+                      <h3 class="subtitle accordion__item-title accordion__item-title--yell salon-item__accordion-title">Ногтевой сервис</h3>
+                    </div>
+                    <div class="accordion__content">
+                      <div class="service-table">
+                        <div class="service-table__left-col">
+                          <ul class="list service-table__list">
+                            <li class="service-table__tab"><span class="service-table__tab-text service-table__tab-text--active">Аппаратная</span>
+                              <ul class="service-table__list price-cosm-app-mobile">
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox service-table__checkbox--active"></span>Миостимуляция</div><span class="service-table__price">800 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Лимфодренаж</div><span class="service-table__price">1200 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Микротоки</div><span class="service-table__price">1000 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Дарсенвализация</div><span class="service-table__price">400 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Ультразвуковая</div><span class="service-table__price">1500 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Криолиполиз</div><span class="service-table__price">500 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox service-table__checkbox--active"></span>Эндосфера</div><span class="service-table__price">2200 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Вакуум</div><span class="service-table__price">800 руб</span>
+                                </li>
+                                <li class="service-table__list-item">
+                                  <div class="service-table__checkbox"><span class="checkbox"></span>Лазерная шлифовка лица</div><span class="service-table__price">1000 руб</span>
+                                </li>
+                              </ul>
+                              <li class="service-table__list-item">Инъекционная</li>
+                              <li class="service-table__list-item">Контурная пластика</li>
+                              <li class="service-table__list-item">Уход за кожей лица</li>
+                              <li class="service-table__list-item">Визаж</li>
+                              <li class="service-table__list-item">Татуаж</li>
+                              <li class="service-table__list-item">Ресницы и брови</li>
+                              <li class="service-table__list-item">Эпиляция</li>
+                              <li class="service-table__list-item">Пирсинг</li>
+                              <li class="service-table__list-item">Солярий, хамам</li>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="service-table__right-col">
+                          <ul class="service-table__list price-cosm-app">
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox service-table__checkbox--active"></span>Миостимуляция</div><span class="service-table__price">800 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Лимфодренаж</div><span class="service-table__price">1200 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Микротоки</div><span class="service-table__price">1000 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Дарсенвализация</div><span class="service-table__price">400 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Ультразвуковая</div><span class="service-table__price">1500 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Криолиполиз</div><span class="service-table__price">500 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox service-table__checkbox--active"></span>Эндосфера</div><span class="service-table__price">2200 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Вакуум</div><span class="service-table__price">800 руб</span>
+                            </li>
+                            <li class="service-table__list-item">
+                              <div class="service-table__checkbox"><span class="checkbox"></span>Лазерная шлифовка лица</div><span class="service-table__price">1000 руб</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="salon-item__btn-block"><a class="link link-btn" href="javascript:void(0)">Записаться</a>
+                  </div>
+                </div>
+                <div class="salon-item__responses">
+                  <h2 class="title salon-item__block-title salon-item__responses-title title--small title--text-left title--tt-n">Отзывы</h2>
+                  <div class="response salon-item__response" id="1">
+                    <div class="response__item">
+                      <header class="response__header">
+                        <div class="response__header-container"><span class="text response__author text--big text--c-main">Ольга Сидорова</span>
+                          <time datetime="2019-12-31"><span class="text text--small">31.12.2019</span>
+                          </time>
+                        </div>
+                        <div class="rating">
+                          <svg width="18" height="18">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg><span class="text text--big-m text--c-black rating__count">4.7</span>
+                        </div>
+                      </header>
+                      <div class="response__body">
+                        <p class="discr response__discr">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                      </div>
+                    </div>
+                    <div class="response__item">
+                      <header class="response__header">
+                        <div class="response__header-container"><span class="text response__author text--big text--c-main">Александра Сидорова</span>
+                          <time datetime="2019-12-31"><span class="text text--small">31.12.2019</span>
+                          </time>
+                        </div>
+                        <div class="rating">
+                          <svg width="18" height="18">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg><span class="text text--big-m text--c-black rating__count">4.9</span>
+                        </div>
+                      </header>
+                      <div class="response__body">
+                        <p class="discr response__discr">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                      </div>
+                    </div>
+                    <div class="response__item">
+                      <header class="response__header">
+                        <div class="response__header-container"><span class="text response__author text--big text--c-main">Анастасия Васильева</span>
+                          <time datetime="2019-12-31"><span class="text text--small">21.11.2019</span>
+                          </time>
+                        </div>
+                        <div class="rating">
+                          <svg width="18" height="18">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg><span class="text text--big-m text--c-black rating__count">4.9</span>
+                        </div>
+                      </header>
+                      <div class="response__body">
+                        <p class="discr response__discr">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                      </div>
+                    </div>
+                    <div class="response__item">
+                      <header class="response__header">
+                        <div class="response__header-container"><span class="text response__author text--big text--c-main">Татьяна Иванова</span>
+                          <time datetime="2019-12-31"><span class="text text--small">01.11.2019</span>
+                          </time>
+                        </div>
+                        <div class="rating">
+                          <svg width="18" height="18">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg><span class="text text--big-m text--c-black rating__count">4.5</span>
+                        </div>
+                      </header>
+                      <div class="response__body">
+                        <p class="discr response__discr">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="response salon-item__response-slider owl-carousel" id="2">
+                    <div class="response__item">
+                      <header class="response__header">
+                        <div class="response__header-container"><span class="text response__author text--big text--c-main">Ольга Сидорова</span>
+                          <time datetime="2019-12-31"><span class="text text--small">31.12.2019</span>
+                          </time>
+                        </div>
+                        <div class="rating">
+                          <svg width="18" height="18">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg><span class="text text--big-m text--c-black rating__count">4.7</span>
+                        </div>
+                      </header>
+                      <div class="response__body">
+                        <p class="discr response__discr">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                      </div>
+                    </div>
+                    <div class="response__item">
+                      <header class="response__header">
+                        <div class="response__header-container"><span class="text response__author text--big text--c-main">Александра Сидорова</span>
+                          <time datetime="2019-12-31"><span class="text text--small">31.12.2019</span>
+                          </time>
+                        </div>
+                        <div class="rating">
+                          <svg width="18" height="18">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg><span class="text text--big-m text--c-black rating__count">4.9</span>
+                        </div>
+                      </header>
+                      <div class="response__body">
+                        <p class="discr response__discr">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                      </div>
+                    </div>
+                    <div class="response__item">
+                      <header class="response__header">
+                        <div class="response__header-container"><span class="text response__author text--big text--c-main">Анастасия Васильева</span>
+                          <time datetime="2019-12-31"><span class="text text--small">21.11.2019</span>
+                          </time>
+                        </div>
+                        <div class="rating">
+                          <svg width="18" height="18">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg><span class="text text--big-m text--c-black rating__count">4.9</span>
+                        </div>
+                      </header>
+                      <div class="response__body">
+                        <p class="discr response__discr">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                      </div>
+                    </div>
+                    <div class="response__item">
+                      <header class="response__header">
+                        <div class="response__header-container"><span class="text response__author text--big text--c-main">Татьяна Иванова</span>
+                          <time datetime="2019-12-31"><span class="text text--small">01.11.2019</span>
+                          </time>
+                        </div>
+                        <div class="rating">
+                          <svg width="18" height="18">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg><span class="text text--big-m text--c-black rating__count">4.5</span>
+                        </div>
+                      </header>
+                      <div class="response__body">
+                        <p class="discr response__discr">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="salon-item__right-block">
+                <h2 class="title salon-item__block-title title--small title--text-left title--tt-n">Акции и скидки</h2>
+                <div class="salon-item__promo">
+                  <div class="salon-item__promo-item">
+                    <div class="promo-card">
+                      <header class="promo-card__header">
+                        <div class="promo-card__master"><span class="text text--big text--c-main">Брадобрей, <span>салон</span></span>
+                        </div>
+                        <div class="promo-card__date">
+                          <time datetime="2019-12-31"><span class="text text--small">Действует до 31.12.2019</span>
+                          </time>
+                        </div>
+                      </header>
+                      <div class="promo-card__body">
+                        <div class="promo-card__serv">
+                          <ul class="promo-card__list">
+                            <li class="promo-card__list-item"><span class="text">Парикмахерские услуги</span>
+                            </li>
+                            <li class="promo-card__list-item"><span class="text">Стрижка бороды</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="promo-card__slogan">
+                          <p class="discr">Приведи друга и оба получите скидку 10% на стрижку бороды</p>
+                        </div>
+                        <div class="promo-card__btn"><a class="link promo-card__link" href="salon-cards.html"><span class="text promo-card__link-text">Стоимость: </span><span class="text text--big text--c-main">300</span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="salon-item__promo-item">
+                    <div class="promo-card">
+                      <header class="promo-card__header">
+                        <div class="promo-card__master"><span class="text text--big text--c-main">Аннет, <span>мастер</span></span>
+                        </div>
+                        <div class="promo-card__date">
+                          <time datetime="2019-12-31"><span class="text text--small">Действует до 31.12.2019</span>
+                          </time>
+                        </div>
+                      </header>
+                      <div class="promo-card__body">
+                        <div class="promo-card__serv">
+                          <ul class="promo-card__list">
+                            <li class="promo-card__list-item"><span class="text">Ногтевой сервис</span>
+                            </li>
+                            <li class="promo-card__list-item"><span class="text">Маникюр</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="promo-card__slogan">
+                          <p class="discr">Маникюр и педикюр за 1200 руб</p>
+                        </div>
+                        <div class="promo-card__btn"><a class="link promo-card__link" href="salon-cards.html"><span class="text promo-card__link-text">Стоимость: </span><span class="text text--big text--c-main">400</span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="salon-item__promo-item">
+                    <div class="promo-card">
+                      <header class="promo-card__header">
+                        <div class="promo-card__master"><span class="text text--big text--c-main">Кармэн, <span>салон</span></span>
+                        </div>
+                        <div class="promo-card__date">
+                          <time datetime="2019-12-31"><span class="text text--small">Действует до 31.12.2019</span>
+                          </time>
+                        </div>
+                      </header>
+                      <div class="promo-card__body">
+                        <div class="promo-card__serv">
+                          <ul class="promo-card__list">
+                            <li class="promo-card__list-item"><span class="text">Ногтевой сервис</span>
+                            </li>
+                            <li class="promo-card__list-item"><span class="text">Окрашивание волос</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="promo-card__slogan">
+                          <p class="discr">При заказе услуги краска премиум-качества в подарок</p>
+                        </div>
+                        <div class="promo-card__btn"><a class="link promo-card__link" href="salon-cards.html"><span class="text promo-card__link-text">Стоимость: </span><span class="text text--big text--c-main">500</span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="salon-item__promo-slider">
+                  <div class="salon-item__slider-items owl-carousel" id="salon-item__promo-slider">
+                    <div class="promo-card">
+                      <header class="promo-card__header">
+                        <div class="promo-card__master"><span class="text text--big text--c-main">Брадобрей, <span>салон</span></span>
+                        </div>
+                        <div class="promo-card__date">
+                          <time datetime="2019-12-31"><span class="text text--small">Действует до 31.12.2019</span>
+                          </time>
+                        </div>
+                      </header>
+                      <div class="promo-card__body">
+                        <div class="promo-card__serv">
+                          <ul class="promo-card__list">
+                            <li class="promo-card__list-item"><span class="text">Парикмахерские услуги</span>
+                            </li>
+                            <li class="promo-card__list-item"><span class="text">Стрижка бороды</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="promo-card__slogan">
+                          <p class="discr">Приведи друга и оба получите скидку 10% на стрижку бороды</p>
+                        </div>
+                        <div class="promo-card__btn"><a class="link promo-card__link" href="salon-cards.html"><span class="text promo-card__link-text">Стоимость: </span><span class="text text--big text--c-main">300</span></a></div>
+                      </div>
+                    </div>
+                    <div class="promo-card">
+                      <header class="promo-card__header">
+                        <div class="promo-card__master"><span class="text text--big text--c-main">Аннет, <span>мастер</span></span>
+                        </div>
+                        <div class="promo-card__date">
+                          <time datetime="2019-12-31"><span class="text text--small">Действует до 31.12.2019</span>
+                          </time>
+                        </div>
+                      </header>
+                      <div class="promo-card__body">
+                        <div class="promo-card__serv">
+                          <ul class="promo-card__list">
+                            <li class="promo-card__list-item"><span class="text">Ногтевой сервис</span>
+                            </li>
+                            <li class="promo-card__list-item"><span class="text">Маникюр</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="promo-card__slogan">
+                          <p class="discr">Маникюр и педикюр за 1200 руб</p>
+                        </div>
+                        <div class="promo-card__btn"><a class="link promo-card__link" href="salon-cards.html"><span class="text promo-card__link-text">Стоимость: </span><span class="text text--big text--c-main">400</span></a></div>
+                      </div>
+                    </div>
+                    <div class="promo-card">
+                      <header class="promo-card__header">
+                        <div class="promo-card__master"><span class="text text--big text--c-main">Кармэн, <span>салон</span></span>
+                        </div>
+                        <div class="promo-card__date">
+                          <time datetime="2019-12-31"><span class="text text--small">Действует до 31.12.2019</span>
+                          </time>
+                        </div>
+                      </header>
+                      <div class="promo-card__body">
+                        <div class="promo-card__serv">
+                          <ul class="promo-card__list">
+                            <li class="promo-card__list-item"><span class="text">Ногтевой сервис</span>
+                            </li>
+                            <li class="promo-card__list-item"><span class="text">Окрашивание волос</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="promo-card__slogan">
+                          <p class="discr">При заказе услуги краска премиум-качества в подарок</p>
+                        </div>
+                        <div class="promo-card__btn"><a class="link promo-card__link" href="salon-cards.html"><span class="text promo-card__link-text">Стоимость: </span><span class="text text--big text--c-main">500</span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-controls salon-item__promo-slider-controls">
+                    <button class="btn btn-slider slider__btn-prev" id="salon-item-btn-prev" type="button">
+                      <svg width="10px" height="20px">
+                        <use xlink:href="img/sprite.svg#arrow-prw"></use>
+                      </svg>
+                    </button>
+                    <button class="btn btn-slider slider__btn-next" id="salon-item-btn-next" type="button">
+                      <svg width="10px" height="20px">
+                        <use xlink:href="img/sprite.svg#arrow-nxt"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="page-footer">
+        <div class="layout-position">
+          <div class="footer-links">
+            <div class="footer-block-links">
+              <div class="column">
+                <ul class="footer-list">
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Подключиться как салон</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Подключиться как мастер</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Инвесторам</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Франчайзинг</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Пресс-центр</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul class="footer-list">
+                  <li class="footer-list__item"><a class="link footer-list__link" href="catalog.html">Все салоны</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="catalog.html">Все мастера</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Специальные предложения</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Магазин подарков</a>
+                  </li>
+                  <li class="footer-list__item"><a class="link footer-list__link" href="javascript:void(0)">Пользовательское соглашение</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-links__social">
+              <ul class="list social-list">
+                <li class="social-list__item"><a class="social-list__link social-list__link--vk" href="javascript:void(0)">Вконтакте
+                    <div class="social-img">
+                      <svg width="24px" height="14px">
+                        <use xlink:href="img/sprite.svg#vk"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--fb" href="javascript:void(0)">facebook
+                    <div class="social-img">
+                      <svg width="12px" height="24px">
+                        <use xlink:href="img/sprite.svg#fb"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--ok" href="javascript:void(0)">Однокласники
+                    <div class="social-img">
+                      <svg width="14px" height="24px">
+                        <use xlink:href="img/sprite.svg#odkl"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--inst" href="javascript:void(0)">instagram
+                    <div class="social-img">
+                      <svg width="24px" height="24px">
+                        <use xlink:href="img/sprite.svg#inst"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--ytube" href="javascript:void(0)">youtube
+                    <div class="social-img">
+                      <svg width="24px" height="18px">
+                        <use xlink:href="img/sprite.svg#youtb"></use>
+                      </svg>
+                    </div></a></li>
+                <li class="social-list__item"><a class="social-list__link social-list__link--tg" href="javascript:void(0)">Telegram
+                    <div class="social-img">
+                      <svg width="24px" height="20px">
+                        <use xlink:href="img/sprite.svg#tg"></use>
+                      </svg>
+                    </div></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
