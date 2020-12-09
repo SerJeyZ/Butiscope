@@ -942,8 +942,8 @@ input[type="number"] {
 .remove-item,
 .add-item {
   position: relative;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
 }
 
 .remove-item::before,
@@ -971,7 +971,7 @@ input[type="number"] {
 }
 
 .add-item::before {
-  transform: rotate(90deg);
+  transform: rotate(90deg) translate(-4%, 22%);
   top: 50%;
   left: 0;
 }
@@ -979,6 +979,7 @@ input[type="number"] {
 .add-item::after {
   top: 50%;
   left: 0;
+  transform: translate(0, -40%);
 }
 
 .link {
@@ -1459,6 +1460,8 @@ input[type="number"] {
 }
 
 .salon-card {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding: 15px;
   border-radius: 8px;
@@ -1516,6 +1519,7 @@ input[type="number"] {
 
 .salon-adress {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 15px;
   align-items: flex-end;
 }
@@ -1536,6 +1540,7 @@ input[type="number"] {
 
 .salon-footer {
   display: flex;
+  margin-top: auto;
 }
 
 .salon-footer__chat-link {
